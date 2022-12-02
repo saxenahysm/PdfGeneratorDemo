@@ -55,36 +55,22 @@ Bitmap bmp ,scaledBitmap;
                 PdfDocument.PageInfo myPageInfo1 = new PdfDocument.PageInfo.Builder(250, 400, 1).create();
                 PdfDocument.Page myPage1 = myPDFDocument.startPage(myPageInfo1);
                 Canvas canvas = myPage1.getCanvas();
-     /*   canvas.drawText("Welcome To  PDF Creation Page No. 01",40,50,myPaint);
-        myPDFDocument.finishPage(myPage1);
 
-
-        PdfDocument.PageInfo myPageInfo2 = new PdfDocument.PageInfo.Builder(400,600,1).create();
-        PdfDocument.Page myPage2 = myPDFDocument.startPage(myPageInfo2);
-        Canvas canvas2 = myPage2.getCanvas();
-        canvas2.drawText("Welcome To  PDF Creation Page No. 02",40,50,myPaint);
-        myPDFDocument.finishPage(myPage2);*/
-
-     //Image Add in PDF
-
-             //   canvas.drawBitmap(scaledBitmap,40,50,myPaint);
-
-     //Table Formate Code
                 myPaint.setTextAlign(Paint.Align.CENTER);
                 myPaint.setTextSize(12.0f);
-                canvas.drawText("HR Enterprises", myPageInfo1.getPageWidth() / 2, 30, myPaint);
+                canvas.drawText("Team AndrodSandro", myPageInfo1.getPageWidth() / 2, 30, myPaint);
 
 
                 myPaint.setTextSize(6.0f);
                 myPaint.setTextScaleX(1.5f);
                 myPaint.setColor(Color.rgb(122, 119, 119));
-                canvas.drawText("Ring Road No. 01, Mahadev Ghat Overbridge, Raipur", myPageInfo1.getPageWidth() / 2, 40, myPaint);
+                canvas.drawText("Ring Road No. 01, Mahadev Ghat Over bridge, Raipur", myPageInfo1.getPageWidth() / 2, 40, myPaint);
                 myPaint.setTextScaleX(1f);
 
                 myPaint.setTextAlign(Paint.Align.LEFT);
                 myPaint.setTextSize(9.0f);
                 myPaint.setColor(Color.rgb(122, 119, 119));
-                canvas.drawText("Customer Information", 10, 70, myPaint);
+                canvas.drawText("Invoice No :- 0011", 10, 70, myPaint);
 
                 myPaint.setTextAlign(Paint.Align.LEFT);
                 myPaint.setTextSize(8.0f);
