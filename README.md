@@ -2,8 +2,7 @@
 
 Code To Create a View 
 
-private void createPdf() {
-
+        private void createPdf() {
         button.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
@@ -16,9 +15,9 @@ private void createPdf() {
                 PdfDocument.Page myPage1 = myPDFDocument.startPage(myPageInfo1);
                 Canvas canvas = myPage1.getCanvas();
 
-     //Image Add in PDF
-     //   canvas.drawBitmap(scaledBitmap,40,50,myPaint);
-     //Table Formate Code
+                //Image Add in PDF
+                //canvas.drawBitmap(scaledBitmap,40,50,myPaint);
+                //Table Formate Code
                 myPaint.setTextAlign(Paint.Align.CENTER);
                 myPaint.setTextSize(12.0f);
                 canvas.drawText("HR Enterprises", myPageInfo1.getPageWidth() / 2, 30, myPaint);
