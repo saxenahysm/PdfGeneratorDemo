@@ -2,7 +2,7 @@
 
 Code To Create a View 
 
-`private void createPdf() {
+private void createPdf() {
 
         button.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -84,4 +84,4 @@ Code To Create a View
             }
         });
 
-    }`
+    }
